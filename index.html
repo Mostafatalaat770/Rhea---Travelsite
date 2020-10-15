@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Project 3</title>
+	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/bootstrap-grid.css" />
+	<link rel="stylesheet" href="css/main.css" />
+	<script src="js/main.js"></script>
+</head>
+
+<body onload="loadPlayer()">
+	<!--[if lt IE 7]>
+			<p class="browsehappy">
+				You are using an <strong>outdated</strong> browser. Please
+				<a href="#">upgrade your browser</a> to improve your experience.
+			</p>
+		<![endif]-->
+	<div class="container">
+		<header id="home">
+			<nav class="navbar">
+				<a class="navbar-brand" href="#">
+					<img src="img/logo.svg" alt="" width="40" height="40" class="d-inline-block" />
+					Rhea
+				</a>
+
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#home">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#videos">Video</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#destinations">Destination</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#book">Booking</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link button" href="#">Sign In</a>
+					</li>
+				</ul>
+			</nav>
+			<section class="intro">
+				<div class="row">
+					<div class="col-4 info">
+						<h1>Travel around the world</h1>
+						<p>
+							Plan and book your perfect trip with expert advice, travel tips,
+							destination information and inspiration from us.
+						</p>
+						<button>Sign Up Now</button>
+					</div>
+					<div class="col-8">
+						<img src="img/header.svg" />
+					</div>
+				</div>
+			</section>
+		</header>
+		<section id="destinations">
+			<div class="row">
+				<div class="col-8">
+					<div id="slider" class="row">
+						<div class="col-4 item">
+							<div class="title"><span>Kuramathi, maldives</span></div>
+							<span class="price">$780</span>
+
+							<img src="img/dest3.png" />
+							<div class="info">
+								<div class="raiting">
+									<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="#3984f3"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+									</svg>
+									<svg width="1em" height="1em" viewBox="0 0 16 16" fill="#3984f3" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+									</svg>
+									<svg width="1em" height="1em" viewBox="0 0 16 16" fill="#3984f3" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+									</svg>
+									<svg width="1em" height="1em" viewBox="0 0 16 16" fill="#3984f3" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+									</svg>
+									<svg width="1em" height="1em" viewBox="0 0 16 16" fill="#3984f3" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd"
+											d="M5.354 5.119L7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.519.519 0 0 1-.146.05c-.341.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.171-.403.59.59 0 0 1 .084-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027c.08 0 .16.018.232.056l3.686 1.894-.694-3.957a.564.564 0 0 1 .163-.505l2.906-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.002 2.223 8 2.226v9.8z" />
+									</svg>
+								</div>
+								<p class="duration">7 days tour</p>
+							</div>
+						</div>
+
+						<div class="col-4 item active">
+							<div class="title"><span>Kathmandu, Nepal</span></div>
+							<span class="price">$640</span>
+
+							<img src="img/dest1.png" />
+							<div class="info show">
+								<div class="raiting">
+									<svg width="1em" height="1em" viewBox="0 0 16 16" fill="#3984f3" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+									</svg>
+									<svg width="1em" height="1em" viewBox="0 0 16 16" fill="#3984f3" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+									</svg>
+									<svg width="1em" height="1em" viewBox="0 0 16 16" fill="#3984f3" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+									</svg>
+									<svg width="1em" height="1em" viewBox="0 0 16 16" fill="#3984f3" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+									</svg>
+									<svg width="1em" height="1em" viewBox="0 0 16 16" fill="#3984f3" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd"
+											d="M5.354 5.119L7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.519.519 0 0 1-.146.05c-.341.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.171-.403.59.59 0 0 1 .084-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027c.08 0 .16.018.232.056l3.686 1.894-.694-3.957a.564.564 0 0 1 .163-.505l2.906-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.002 2.223 8 2.226v9.8z" />
+									</svg>
+								</div>
+								<p class="duration">7 days tour</p>
+							</div>
+						</div>
+						<div class="col-4 item">
+							<div class="title"><span>Raja Ampat, Indonesia</span></div>
+							<span class="price">$560</span>
+
+							<img src="img/dest2.png" />
+							<div class="info">
+								<div class="raiting">
+									<svg width="1em" height="1em" viewBox="0 0 16 16" fill="#3984f3" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+									</svg>
+									<svg width="1em" height="1em" viewBox="0 0 16 16" fill="#3984f3" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+									</svg>
+									<svg width="1em" height="1em" viewBox="0 0 16 16" fill="#3984f3" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+									</svg>
+									<svg width="1em" height="1em" viewBox="0 0 16 16" fill="#3984f3" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+									</svg>
+									<svg width="1em" height="1em" viewBox="0 0 16 16" fill="#3984f3" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd"
+											d="M5.354 5.119L7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.519.519 0 0 1-.146.05c-.341.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.171-.403.59.59 0 0 1 .084-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027c.08 0 .16.018.232.056l3.686 1.894-.694-3.957a.564.564 0 0 1 .163-.505l2.906-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.002 2.223 8 2.226v9.8z" />
+									</svg>
+								</div>
+								<p class="duration">7 days tour</p>
+							</div>
+						</div>
+					</div>
+					<div class="row slider">
+						<button onclick="slide('-')">
+							<svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd"
+									d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+							</svg>
+						</button>
+						<button onclick="slide('+')">
+							<svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd"
+									d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+							</svg>
+						</button>
+					</div>
+				</div>
+
+				<div class="col-4">
+					<h2>Amazing places to enjoy your travel</h2>
+					<hr />
+					<p>
+						Etiam facilisis, sapien quis porta dignissim, orci nisi pharetra
+						dui, varius vehicula ligula nulla sit amet lorem. Aenean in
+						vestibulum quam. Cras commodo varius neque, non gravida diam
+						ultrices nec. Cras nulla mauris, fermentum nec libero in.
+					</p>
+					<button class="normal">Explore</button>
+				</div>
+			</div>
+		</section>
+		<section id="videos">
+			<h2>Featured videos</h2>
+			<hr />
+			<div class="row justify-content-center">
+				<div class="col-8">
+					<p>
+						Aliquam sodales vitae ex tincidunt consectetur. Etiam eleifend
+						malesuada magna, at imperdiet justo euismod eu. Aliquam vel imperdet
+						mi, et convallis eros. Duis fermentum fringilla nisl at vulputate.
+						Nunc nec lorem faucibus, molestie nisi id, elementum sem. Sed
+						vulputate tempor augue a efficitur urna, ultrices eu. Duis vel turpis
+						et arcu.
+					</p>
+				</div>
+				<div class="row" id="video-viewer">
+					<div class="col-8" id="active-video">
+
+					</div>
+					<div class="col-4" id="video-list">
+						<div class="video-item" onclick="setActiveVideo(this)">
+							<div class="video-container"><video ondurationchange="getData(this)">
+									<source src="videos/vid1.mp4" type="video/mp4">
+								</video></div>
+							<div class="metadata">
+								<h3>When go to Maldives
+								</h3>
+								<p></p>
+							</div>
+						</div>
+						<div class="video-item" onclick="setActiveVideo(this)">
+							<div class="video-container"><video ondurationchange="getData(this)">
+									<source src="videos/vid2.mp4" type="video/mp4">
+								</video></div>
+							<div class="metadata">
+								<h3>Tanzania’s deadly
+									pink lake
+								</h3>
+								<p></p>
+							</div>
+						</div>
+						<div class="video-item" onclick="setActiveVideo(this)">
+							<div class="video-container"><video ondurationchange="getData(this)">
+									<source src="videos/vid3.mp4" type="video/mp4">
+								</video></div>
+							<div class="metadata">
+								<h3>Top things to do in
+									Kathmandu
+								</h3>
+								<p></p>
+							</div>
+						</div>
+						<div class="video-item" onclick="setActiveVideo(this)">
+							<div class="video-container"><video ondurationchange="getData(this)">
+									<source src="videos/vid1.mp4" type="video/mp4">
+								</video></div>
+							<div class="metadata">
+								<h3>Exploring China’s
+									creative capital
+								</h3>
+								<p></p>
+							</div>
+						</div>
+						<div class="video-item" onclick="setActiveVideo(this)">
+							<div class="video-container"><video ondurationchange="getData(this)">
+									<source src="videos/vid2.mp4" type="video/mp4">
+								</video></div>
+							<div class="metadata">
+								<h3>When go to Maldives
+								</h3>
+								</h3>
+								<p></p>
+							</div>
+						</div>
+						<div class="video-item" onclick="setActiveVideo(this)">
+							<div class="video-container"><video ondurationchange="getData(this)">
+									<source src="videos/vid3.mp4" type="video/mp4">
+								</video></div>
+							<div class="metadata">
+								<h3>Tanzania’s deadly
+									pink lake
+								</h3>
+								<p></p>
+							</div>
+						</div>
+					</div>
+				</div>
+		</section>
+		<section id="categories">
+			<h2>Travel categories</h2>
+			<hr>
+			<div class="row justify-content-center">
+				<div class="col-8">
+					<p>Maecenas et eros non quam ultricies interdum. Proin ac dolor vel neque ullamcorper blandit vitae et felis.
+						Morbi ante urna, imperdiet vel neque vitae, porta ullamcorper metus. Quisque bibendum venenatis eros sed
+						commodo. Nullam ultrices tortor non diam ullamcorper auctor. In urna tellus, auctor sit amet est ut,
+						scelerisque volutpat diam.</p>
+				</div>
+			</div>
+			<div id="categories-slider" class="justify-content-center">
+				<div id="sliderbox" class="col-10">
+					<div class="col-3 slider-item">
+						<div class="title"><span>Food and drinks</span></div>
+
+						<img src="img/cat1.svg" />
+					</div>
+					<div class="col-3 slider-item">
+						<div class="title"><span>Backpacking</span></div>
+
+						<img src="img/cat2.svg" />
+					</div>
+					<div class="col-3 slider-item active">
+						<div class="title"><span>Beaches, coast and island</span></div>
+
+						<img src="img/cat3.svg" />
+
+					</div>
+
+					<div class="col-3 slider-item">
+						<div class="title"><span>Art and culture</span></div>
+
+						<img src="img/cat4.svg" />
+					</div>
+					<div class="col-3 slider-item">
+						<div class="title"><span>Wildlife and nature</span></div>
+
+						<img src="img/cat5.svg" />
+					</div>
+				</div>
+			</div>
+			<div class="row slider">
+				<button onclick="slideRotate('-')">
+					<svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd"
+							d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+					</svg>
+				</button>
+				<button onclick="slideRotate('+')">
+					<svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd"
+							d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+					</svg>
+				</button>
+			</div>
+		</section>
+	<section id="reviews">
+		<h2>Traveller’s experiences</h2>
+		<hr>
+		<div class="row justify-content-center">
+			<div class="row justify-content-center">
+				<div class="reviews col-8">
+					<div class="row">
+						<div class="col-2 reviews-button right">
+							<button onclick="reviewSlide('-')">
+								<svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+									xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd"
+										d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+								</svg>
+
+							</button></div>
+						<div id="clients" class="col-8">
+							<div class="review display fade">
+								<p>“Curabitur posuere ullamcorper pulvinar. Donec dignissim bibendum leo, at faucibus enim aliquam eu. Nullam
+									quis pulvinar diam, ac elementum urna. Integer id vehicula tortor, nec pulvinar libero. Ut elit elit,
+									fringilla a nisi ut, dapibus eleifend quam.” </p>
+									<img src="img/client.svg">
+							<h4>Donquixote Law</h4>
+							<span>Traveller</span>
+						</div>
+							<div class="review">
+								<p>“Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem.” </p>
+									<img src="img/client.svg">
+							<h4>Client 2</h4>
+							<span>Engineer</span>
+						</div>
+							<div class="review">
+								<p>“Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.” </p>
+									<img src="img/client.svg">
+							<h4>Client 3</h4>
+							<span>Doctor</span>
+						</div>
+							<div class="review">
+								<p>“At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi.” </p>
+									<img src="img/client.svg">
+							<h4>Client 4</h4>
+							<span>HR</span>
+						</div>
+							<div id="pagination">
+								<svg onclick="jumpToClient('0')" class="current" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-dash" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
+								</svg>
+								<svg onclick="jumpToClient('1')" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-dash" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
+								</svg>
+								<svg onclick="jumpToClient('2')" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-dash" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
+								</svg>
+								<svg onclick="jumpToClient('3')" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-dash" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
+								</svg>
+							</div>
+						</div>
+						<div class="col-2 reviews-button left">
+							<button onclick="reviewSlide('+')">
+								<svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+									xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd"
+										d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+								</svg>
+							</button>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+</div>
+<section id="book">
+	<div class="container">
+		<h4>
+			WE WILL SEE YOU
+		</h4>
+		<h3>
+			Enjoy 30% Off On First Trip
+		</h3>
+		<div class="row justify-content-center">
+			<div class="col-3">
+				<div class="dropdown">
+			<select name="cars" id="cars">
+				<option disabled value="" selected hidden>Destinations</option>
+				<option value="volvo">Volvo</option>
+				<option value="saab">Saab</option>
+				<option value="mercedes">Mercedes</option>
+				<option value="audi">Audi</option>
+			</select>
+			<span class="dropdown-icon"></span>
+		</div>
+			</div>
+			<div class="col-3">
+			<div class="dropdown">	
+			<select name="cars" id="cars" >
+				<option disabled value="" selected hidden>Package</option>
+
+				<option value="volvo">Volvo</option>
+				<option value="saab">Saab</option>
+				<option value="mercedes">Mercedes</option>
+				<option value="audi">Audi</option>
+			</select>
+			<span class="dropdown-icon"></span>
+			</div></div>
+		<div class="col-3">				<div class="dropdown">	
+			<input type="text" placeholder="Date" onfocus="(this.type='date')" onblur="(this.type='text')">
+			<span class="date"></span>
+	</div>	</div>
+		<div class="col-3"><button>Book Now</button></div>
+	</div>
+</div>
+
+</section>
+<footer>
+	<div class="container">
+		<div class="row justify-content-center">
+			<nav>
+				<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#destinations">Destinations</a></li>
+<li><a href="#book">Booking</a></li>
+<li><a href="#">Contact</a></li>
+<li><a href="#">Pricing</a></li>
+<li><a href="#">Privacy Policy</a></li>
+				</ul>
+			</nav>
+			<div class="copyright">
+				<p>Copyright 2014 - 2018 <span>Rhea - Travel Around The World</span></p>
+			</div>
+			<div class="social-icons">
+				<div class="icon-container"><svg width="1em" height="1em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"></path></svg></div>
+				<div class="icon-container"><svg width="1em" height="1em" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M23.9981 11.9991C23.9981 5.37216 18.626 0 11.9991 0C5.37216 0 0 5.37216 0 11.9991C0 17.9882 4.38789 22.9522 10.1242 23.8524V15.4676H7.07758V11.9991H10.1242V9.35553C10.1242 6.34826 11.9156 4.68714 14.6564 4.68714C15.9692 4.68714 17.3424 4.92149 17.3424 4.92149V7.87439H15.8294C14.3388 7.87439 13.8739 8.79933 13.8739 9.74824V11.9991H17.2018L16.6698 15.4676H13.8739V23.8524C19.6103 22.9522 23.9981 17.9882 23.9981 11.9991Z"></path></svg></div>
+				<div class="icon-container"><svg width="1em" height="1em" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"></path></svg></div>
+				<div class="icon-container"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+				</svg></div>
+			</div>
+		</div>
+	</div>
+</footer>
+</body>
+
+</html>

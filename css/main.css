@@ -1,0 +1,525 @@
+@font-face {
+	font-family: "NunitoSans Regular";
+	src: url(../fonts/NunitoSans-Regular.ttf);
+}
+@font-face {
+	font-family: "NunitoSans ExtraBold";
+	src: url(../fonts/NunitoSans-ExtraBold.ttf);
+}
+@font-face {
+	font-family: "NunitoSans SemiBold";
+	src: url(../fonts/NunitoSans-SemiBold.ttf);
+}
+@font-face {
+	font-family: "Catamaran Medium";
+	src: url(../fonts/Catamaran-Medium.ttf);
+}
+
+.nav-item {
+	display: inline-block;
+	padding-right: 2em;
+}
+.navbar-nav .nav-item:last-child {
+	padding-right: 0;
+}
+
+.button {
+	border: 3px solid #3984f3;
+}
+.button a {
+	text-align: center;
+}
+html {
+	scroll-behavior: smooth;
+}
+header,
+main,
+footer {
+	padding: 2%;
+}
+section {
+	padding: 4% 0;
+}
+.navbar {
+	display: flex;
+	font-size: 1em;
+	padding: 0 2%;
+}
+.navbar-brand {
+	place-self: center;
+	font-family: "Catamaran Medium";
+	color: #3984f3;
+	font-size: 2rem;
+	text-decoration: none;
+}
+.navbar-brand img {
+	vertical-align: middle;
+}
+.navbar ul {
+	margin-left: auto;
+}
+.navbar-nav a {
+	text-decoration: none;
+	padding: 0.5em 1em;
+	border: 2px solid transparent;
+	color: #bab8b8;
+	transition: color 0.2s linear;
+	font-family: "NunitoSans Regular";
+}
+.navbar-nav a:hover {
+	color: #3984f3;
+}
+.navbar-nav .button {
+	border: 2px solid #3984f3;
+	transition: all 0.2s linear;
+}
+.navbar-nav .button:hover {
+	background-color: #3984f3;
+	color: #ffffff;
+}
+.navbar-nav .active {
+	color: #3984f3;
+}
+.intro {
+	padding-top: 2%;
+	padding-left: 2%;
+	margin-right: -4em;
+}
+.intro img {
+	width: 100%;
+}
+.info {
+	place-self: center;
+	font-size: 1em;
+}
+.info h1 {
+	color: #091e40;
+	font-family: "NunitoSans ExtraBold";
+	font-size: 3em;
+}
+.info p {
+	color: #bab8b8;
+	font-family: "NunitoSans Regular";
+	margin: 3em 0;
+}
+.info button {
+	background-color: #3984f3;
+	color: #ffffff;
+	border: none;
+	padding: 1em;
+	font-family: "NunitoSans SemiBold";
+	cursor: pointer;
+}
+h2,
+h3 {
+	font-family: "NunitoSans SemiBold";
+	color: #091e40;
+	font-size: 2em;
+}
+#destinations p,
+#videos p,
+#categories p,
+#reviews p {
+	color: #bab8b8;
+	font-family: "NunitoSans Regular";
+}
+#destinations .normal {
+	background-color: #3984f3;
+	color: #ffffff;
+	border: none;
+	padding: 0.5em 3em;
+	font-family: "NunitoSans SemiBold";
+	cursor: pointer;
+}
+hr {
+	width: 3em;
+	margin-left: initial;
+	border-top: 4px solid #3984f3;
+}
+.item {
+	position: relative;
+	transition: all 0.5s;
+	bottom: 0;
+}
+.item .price {
+	position: absolute;
+	padding: 0.5em 1em;
+	background-color: #3984f3;
+	top: 1em;
+	color: #ffffff;
+	font-family: "NunitoSans SemiBold";
+}
+.item .title {
+	position: absolute;
+	bottom: 1.5em;
+	height: 40%;
+	width: calc(100% - 1.5em);
+	background: linear-gradient(
+		rgba(34, 44, 56, 0) 0%,
+		rgba(34, 49, 59, 0.545) 48%,
+		rgba(34, 53, 61, 0.604) 60%
+	);
+}
+.item .title span {
+	position: absolute;
+	bottom: 1em;
+	padding: 0.5em 1em;
+	color: #ffffff;
+	font-family: "NunitoSans Regular";
+}
+.item img {
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+}
+.item .info {
+	display: none;
+	transition: all 0.5s;
+}
+.show {
+	display: flex !important;
+	transition: all 0.5s;
+}
+.item .duration {
+	margin: 0;
+	margin-left: auto;
+}
+.active {
+	bottom: 3em;
+	height: 100%;
+}
+.slider {
+	place-content: center;
+	padding: 0 1em;
+}
+.slider button,
+.reviews button {
+	width: auto;
+	border: none;
+	background: transparent;
+	margin: 0 0.5em;
+	font-size: 1.5em;
+	color: #a0a0a0;
+	transition: color 0.3s linear;
+	cursor: pointer;
+	outline: none;
+}
+.slider button:hover {
+	color: #707070;
+}
+#videos,
+#categories,
+#reviews,
+#book {
+	text-align: center;
+}
+#videos hr,
+#categories hr,
+#reviews hr {
+	margin: auto;
+}
+video {
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+	pointer-events: none;
+}
+#video-viewer {
+	padding-top: 2em;
+}
+#video-list {
+	height: 50vh;
+	max-height: 500px;
+	overflow-y: scroll;
+}
+#video-list h3 {
+	margin: 0;
+	place-self: center;
+	grid-column: 2;
+}
+#video-list::-webkit-scrollbar {
+	width: 6px;
+}
+
+#video-list::-webkit-scrollbar-track {
+	display: none;
+}
+
+#video-list::-webkit-scrollbar-thumb {
+	border-radius: 2px;
+	-webkit-box-shadow: inset 0px 0px 20px #d9d9d9;
+}
+.video-item {
+	display: grid;
+	margin-bottom: 1em;
+	grid-template-columns: repeat(2, 1fr);
+	padding: 0.5em;
+	transition: all 0.2s linear;
+	cursor: pointer;
+}
+.video-item .video-container {
+	height: 100%;
+	width: 100%;
+	grid-column: 1;
+}
+#active-video {
+	position: relative;
+}
+#active-video video {
+	height: 50vh;
+	max-height: 500px;
+}
+h3 {
+	font-size: 1em;
+}
+.video-item .metadata {
+	place-self: center;
+	text-align: left;
+	padding-left: 1em;
+}
+#active-metadata {
+	position: absolute;
+	bottom: 1em;
+	padding-left: 1em;
+	text-align: left;
+}
+#active-video h3,
+#active-video p {
+	color: #ffffff;
+}
+#media-button {
+	position: absolute;
+	left: calc(50% - 32px);
+	top: calc(50% - 32px);
+	font-size: 3.5em;
+	background: transparent;
+	color: #ffff;
+	outline: none;
+	border-radius: 50%;
+	padding: 0;
+	height: 63px;
+	border: 3px solid #ffffff;
+	z-index: 1;
+}
+.hide {
+	display: none;
+}
+#video-list .current {
+	background: rgb(152 152 152 / 0.15);
+}
+.video-item:hover {
+	background: rgb(152 152 152 / 0.15);
+}
+.video-item p {
+	color: rgb(9 30 64 / 0.7) !important;
+}
+#categories-slider .slider-item {
+	position: relative;
+	transition: all 0.5s ease-in-out;
+	bottom: 0;
+	padding: 0 1em;
+}
+#categories-slider .slider-item .title {
+	position: absolute;
+	height: 40%;
+	background: linear-gradient(
+		rgba(34, 44, 56, 0) 0%,
+		rgba(34, 49, 59, 0.545) 48%,
+		rgba(34, 53, 61, 0.604) 60%
+	);
+	width: calc(100% - 2em);
+	bottom: 0.2em;
+}
+#categories-slider .slider-item span {
+	position: absolute;
+	bottom: 1em;
+	padding: 0.5em 1em;
+	color: #ffffff;
+	font-family: "NunitoSans Regular";
+	left: 0;
+}
+#categories-slider .slider-item img {
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+}
+
+#sliderbox {
+	display: flex;
+	transform: translateX(-20%);
+	opacity: 1;
+	transition: all 0.3s;
+}
+#categories-slider .fade {
+	opacity: 0.9 !important;
+}
+#categories-slider .active {
+	bottom: 2em;
+}
+#categories-slider {
+	overflow-x: hidden;
+	display: flex;
+	padding-top: 4em;
+}
+.reviews-button {
+	place-self: center;
+}
+.left {
+	text-align: left;
+}
+.right {
+	text-align: right;
+}
+.reviews-button button {
+	margin: 0;
+	font-size: 2em;
+}
+#clients {
+	text-align: center;
+}
+#reviews p {
+	color: #091e40;
+}
+#clients h4 {
+	color: #2b323a;
+	font-family: "NunitoSans SemiBold";
+	font-size: 1.2em;
+}
+#clients span {
+	font-family: "NunitoSans Regular";
+	color: #2b323a;
+}
+#pagination {
+	padding-top: 1em;
+}
+#pagination svg {
+	font-size: 3em;
+	color: #3984f3;
+	opacity: 0.3;
+	transition: opacity 0.5s;
+	cursor: pointer;
+}
+#pagination .current,
+#pagination svg:hover {
+	opacity: 1;
+}
+.review {
+	display: none;
+	opacity: 0;
+	transition: all 1.5s;
+}
+.display {
+	display: block;
+}
+#clients .fade {
+	opacity: 1;
+}
+#book {
+	background-image: url(../img/book.svg);
+	padding: 15% 0;
+	background-size: cover;
+	background-color: #1d3037;
+}
+#book h4 {
+	font-family: "NunitoSans SemiBold";
+	font-size: 2em;
+	color: #ffffff;
+}
+#book h3 {
+	font-family: "NunitoSans ExtraBold";
+	font-size: 3em;
+	color: #ffffff;
+}
+#book select {
+	box-sizing: border-box;
+	padding: 1em 1em;
+	width: 100%;
+	border: none;
+	background: rgb(255 255 255 / 0.2);
+	color: #ffffff;
+	font-family: "NunitoSans SemiBold";
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	cursor: pointer;
+}
+#book .dropdown {
+	position: relative;
+}
+#book .dropdown-icon::before {
+	content: url('data:image/svg+xml;charset=UTF-8,<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-expand" fill="white" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3.646 9.146a.5.5 0 0 1 .708 0L8 12.793l3.646-3.647a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 0-.708zm0-2.292a.5.5 0 0 0 .708 0L8 3.207l3.646 3.647a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708z"/></svg>');
+	position: absolute;
+	top: calc(50% - 8px);
+	right: 1em;
+	pointer-events: none;
+}
+#book .date {
+	content: url('data:image/svg+xml;charset=UTF-8,	<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar3" fill="white" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/><path fill-rule="evenodd" d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></svg>');
+	position: absolute;
+	top: calc(50% - 8px);
+	right: 1em;
+	pointer-events: none;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+	color: transparent;
+	background: none;
+	z-index: 1;
+}
+input[type="date"] {
+	font-size: 0.9em;
+}
+#book select option {
+	color: #2b323a;
+}
+#book input,
+#book button {
+	box-sizing: border-box;
+	padding: 1em 1em;
+	width: 100%;
+	border: none;
+	outline: none;
+	font-family: "NunitoSans SemiBold";
+	color: #ffffff;
+	background: rgb(255 255 255 / 0.2);
+}
+#book ::-webkit-input-placeholder {
+	color: #ffffff;
+}
+#book input:-ms-input-placeholder {
+	color: #ffffff;
+}
+#book button {
+	background: #3984f3;
+}
+footer {
+	text-align: center;
+}
+footer nav li {
+	display: inline-block;
+	padding: 0 1em;
+}
+footer nav li a {
+	text-decoration: none;
+	font-family: "NunitoSans Regular";
+	color: #2b323a;
+}
+.copyright {
+	font-family: "NunitoSans SemiBold";
+	color: #2b323a;
+}
+.copyright span {
+	color: #c6c6c6;
+}
+.icon-container {
+	background: #3984f3;
+	color: #ffffff;
+	border-radius: 50%;
+	width: 2em;
+	height: 2em;
+	display: inline-block;
+	margin: 0 0.5em;
+}
+.icon-container svg {
+	vertical-align: middle;
+	padding-top: 8px;
+}
